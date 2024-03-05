@@ -2,7 +2,7 @@
 
 ![site screenshot](Capture.PNG)
 
-![view Doctor Site](https://doccure-appointment.vercel.app/)
+[view Doctor Site](https://doccure-appointment.vercel.app/)
 ## Available Scripts
 
 In the project directory, you can run:
