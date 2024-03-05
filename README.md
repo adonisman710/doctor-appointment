@@ -1,4 +1,4 @@
-# doccure-doctor-appointment
+# doctor-appointment
 
 ![site screenshot](Capture.PNG)
 
