@@ -1,3 +1,3 @@
 # doccure-doctor-appointment
 
-![site screenshot](Capture.png)
+![site screenshot](Capture.PNG)
