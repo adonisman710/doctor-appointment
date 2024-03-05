@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("~assets/fonts/Helvetica.ttf");
+}
+
+$font-family-default: "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Noto Sans JP",
+    "YuGothic",
+    sans-serif;
+$font-family-alphabet: "Montserrat",
+    sans-serif;
+$font-family-sf-pro: "SF Pro Display",
+    "Hiragino Kaku Gothic ProN";
+$font-family-google-sans: "Open Sans",
+    sans-serif;
+$font-family-poppins: "Poppins",
+    sans-serif;
+$font-family-volkhov: "Volkhov",
+    serif;
+$font-family-helvetica: "Helvetica",
+    serif;
+
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;

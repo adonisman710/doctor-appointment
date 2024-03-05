@@ -1,0 +1,157 @@
+.slick-list {
+    @include flexDefine(center, center, wrap);
+
+    .swiper-slide {
+        width: 280px !important;
+        min-width: 280px !important;
+    }
+
+    .slick-slide {
+        display: block;
+        margin-left: 0;
+        padding: 10px;
+        width: 280px;
+        min-width: 280px;
+        outline: none !important;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+
+        .profile-widget {
+            box-shadow: 2px 2px 13px rgb(0 0 0 / 10%);
+            margin-bottom: 0;
+            width: 100%;
+            background-color: $color-white;
+            border: 1px solid $border-color-dove-gray;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            position: relative;
+            -webkit-transition: all .3s ease 0s;
+            -moz-transition: all .3s ease 0s;
+            -o-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+            padding: 15px;
+            cursor: pointer;
+
+            .doc-img {
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                border-radius: 4px;
+
+                a {
+                    color: $color-gray;
+                    background-color: transparent;
+                    transition: all 0.4s ease;
+
+                    img {
+                        border-radius: 4px;
+                        transform: translateZ(0);
+                        transition: all 2000ms cubic-bezier(.19, 1, .22, 1) 0ms;
+                        width: 100%;
+                        vertical-align: middle;
+                        border-style: none;
+                        &:hover {
+                            transform: scale(1.5);
+                        }
+                    }
+
+                    .img-fluid {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .pro-content {
+                padding: 15px 0 0;
+
+                .title {
+                    font-size: 17px;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                    color: $color-secondary-black;
+                    line-height: 1.2;
+
+                    a {
+                        color: $color-gray;
+                    }
+                }
+
+                p.speciality {
+                    font-size: 13px;
+                    color: $text-secondary;
+                    margin-bottom: 5px;
+                    min-height: 40px;
+                }
+
+                .rating {
+                    color: $text-secondary;
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
+
+                .available-info {
+                    font-size: 13px;
+                    color: $text-secondary;
+                    font-weight: 400;
+                    list-style: none;
+                    padding: 0;
+                    margin-bottom: 15px;
+                }
+
+                .row {
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    //margin-right: -15px;
+                    //margin-left: -15px;
+
+                    .col-6 {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                        padding-left: 3px;
+                        padding-right: 3px;
+
+                        .view-btn {
+                            color: $color-paste;
+                            font-size: 13px;
+                            border: 2px solid $color-paste;
+                            text-align: center;
+                            display: block;
+                            font-weight: 500;
+                            padding: 6px;
+                            cursor: pointer;
+                            transition: color .8s ease-in-out, box-shadow .8s ease-in-out;
+
+                            &:hover {
+                                color: $color-white;
+                                box-shadow: inset 0 -60px $color-paste;
+                            }
+                        }
+
+                        .book-btn {
+                            background-color: $color-paste;
+                            border: 2px solid $color-paste;
+                            color: $color-white;
+                            font-size: 13px;
+                            text-align: center;
+                            display: block;
+                            font-weight: 500;
+                            padding: 6px;
+                            cursor: pointer;
+                            transition: color .8s ease-in-out, box-shadow .8s ease-in-out;
+
+                            &:hover {
+                                color: $color-paste;
+                                box-shadow: inset 0 60px $color-white;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

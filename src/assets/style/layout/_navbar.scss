@@ -1,0 +1,161 @@
+.navbar {
+    height: 85px;
+    padding: 0 30px;
+    background-color: $color-white;
+    @include flexDefine(space-between, center, center);
+
+    &-left {
+        height: 100%;
+        @include flexDefine(flex-start, center);
+
+        &__content {
+            height: 100%;
+            @include flexDefine(flex-start, center);
+
+            &__logo {
+                width: 190px;
+                height: 51px;
+
+                img {
+                    width: 160px;
+                    vertical-align: middle;
+                }
+            }
+
+            &-menu {
+                @include flexDefine(flex-start, center);
+                gap: 2rem;
+                height: 100%;
+
+                li {
+                    position: relative;
+                    height: 100%;
+                    text-align: -webkit-match-parent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+                        color: $color-pure-black;
+                        font-size: .9rem;
+                        font-weight: $font-weight-regular;
+
+                        &:hover {
+                            color: $color-green;
+                        }
+
+                        &.active {
+                            color: $color-green;
+                        }
+                    }
+
+                    .submenu {
+                        visibility: hidden;
+                        opacity: 0;
+                        position: absolute;
+                        left: 0;
+                        top: 5.2rem;
+                        min-width: 200px;
+                        height: auto;
+                        background-color: $color-white;
+                        border-radius: 5px;
+                        box-shadow: $service-card-shadow;
+                        font-size: 14px;
+
+                        li {
+                            width: 100%;
+                            padding: 1rem .5rem;
+                            border-bottom: 1px solid $border-color-dove-gray;
+                            @include flexDefine(flex-start, flex-start);
+                            flex-direction: column;
+                            cursor: pointer;
+
+                            &:hover {
+                                a {
+
+                                    color: $color-green  !important;
+                                    transition: all .4s ease-in-out;
+                                    transform: translateX(4px);
+                                }
+                            }
+                        }
+
+                        li:last-child {
+                            border-bottom: none;
+                        }
+                    }
+
+                    &:hover {
+                        .submenu {
+                            visibility: visible;
+                            opacity: 1;
+                            -webkit-transition: all .3s ease-in-out;
+                            transition: all .3s ease;
+                            -webkit-transform: translateY(-20px);
+                            -ms-transform: translateY(-20px);
+                            transform: translateY(-20px);
+                            z-index: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-right {
+        @include flexDefine(flex-start, center);
+        gap: 2rem;
+
+        &__contact {
+            @include flexDefine(flex-start, center);
+            gap: .5rem;
+
+            &-left {
+                font-size: 2rem;
+                cursor: pointer;
+                color: $color-black;
+            }
+
+            &-right {
+                cursor: pointer;
+                font-size: 1rem;
+                font-weight: 300;
+
+                p:nth-child(2) {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &__auth {
+
+            .button-header {
+
+                border: 2px solid $color-green;
+                border-radius: 4px;
+                padding: 10px 15px !important;
+                text-align: center;
+                font-size: 15px;
+                color: $color-green;
+                text-transform: uppercase;
+                font-weight: 500;
+
+                // &:hover {
+                //     background-color: $color-green;
+                //     color: #fff;
+                //     left: 0px;
+                //     transition: all .7s ease-in-out;
+                //     clip-path: circle(75%);
+                // }
+
+                transition: color .7s ease-in-out,
+                    box-shadow .7s ease-in-out;
+
+                &:hover {
+                    color: $color-white;
+                    box-shadow: inset 0px 60px $color-green;
+                }
+            }
+        }
+    }
+}
